@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.authSection {
+  padding: 4rem 0;
+}
+
+.authSection .authForm {
+  background: var(--white);
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto 3vh;
+  flex: 1 0 auto;
+  padding: 3rem;
+}
+
+.authSection .authRegisterForm {
+  background: var(--white);
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto 3vh;
+  flex: 1 0 auto;
+  padding: 3rem;
+}
+
+.authSection .authForm h4,
+.authSection .authRegisterForm h4 {
+  color: var(--deep-blue);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.authSection .authForm p,
+.authSection .authRegisterForm p {
+  color: var(--nav-color) !important;
+}

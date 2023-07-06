@@ -1,0 +1,138 @@
+.formContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.label {
+    font-size: 16px !important;
+    line-height: 21px !important;
+    margin: 10px 0;
+}
+
+.formInput {
+    width: 100%;
+    /* height: calc(1.5em + .75rem + 2px) !important; */
+    height: 50px !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 5px;
+    background: var(--white) !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+.formInput::placeholder {
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: var(--grey2);
+}
+
+.formInput:focus, .select:focus {
+    box-shadow: none !important;
+}
+
+.formBtn {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 15px 25px !important;
+    color: var(--white);
+    text-transform: capitalize;
+    width: 30%;
+    border-radius: .2rem !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 6px 1px rgba(0, 102, 245, .18);
+    margin: auto;
+    display: block;
+    margin-left: 1rem;
+}
+
+.formAuthBtn {
+    background-color: var(--bg);
+    border: 1px solid var(--bg);
+    color: #ffffff;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px 25px !important;
+    line-height: 1.5;
+    text-transform: capitalize;
+    border-radius: .2rem !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 6px 1px rgba(0, 102, 245, .18);
+}
+
+.formIcon {
+    position: absolute;
+    top: 28%;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.formAuthBtn:hover {
+    background-color: var(--blue-2);
+    border: 1px solid var(--blue-2);
+    color: #ffffff;
+}
+
+.authOptions {
+    color: var(--grey);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+
+.authOptions .authOptionLine {
+    background-color: var(--grey2);
+    height: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
+}
+
+.authOptions .authOptionText {
+    background-color: var(--white);
+    display: block;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    top: -3px;
+    width: 42px;
+    color: var(--grey2);
+}
+
+.authAlternative {
+    margin-top: 10px;
+    color: var(--nav-color) !important;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.authAlternative a {
+    font-weight: 600;
+}
+
+.resendCode {
+    color: var(--nav-color) !important;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.resendCode span  {
+    color: var(--blue) !important;
+}

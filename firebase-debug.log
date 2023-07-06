@@ -1,0 +1,102 @@
+[debug] [2023-07-06T02:34:59.360Z] ----------------------------------------------------------------------
+[debug] [2023-07-06T02:34:59.362Z] Command:       /usr/local/bin/firebase /Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-06T02:34:59.362Z] CLI Version:   12.3.1
+[debug] [2023-07-06T02:34:59.362Z] Platform:      darwin
+[debug] [2023-07-06T02:34:59.362Z] Node Version:  v16.16.0
+[debug] [2023-07-06T02:34:59.363Z] Time:          Thu Jul 06 2023 03:34:59 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-06T02:34:59.363Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-06T02:34:59.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-06T02:34:59.426Z] > authorizing via signed-in user (jordangonzales3457@gmail.com)
+[debug] [2023-07-06T02:34:59.427Z] [iam] checking project xian-4dfeb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-06T02:34:59.428Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions [none]
+[debug] [2023-07-06T02:34:59.428Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions x-goog-quota-user=projects/xian-4dfeb
+[debug] [2023-07-06T02:34:59.429Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-06T02:35:00.579Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions 200
+[debug] [2023-07-06T02:35:00.579Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-06T02:35:00.580Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb [none]
+[debug] [2023-07-06T02:35:01.411Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb 200
+[debug] [2023-07-06T02:35:01.411Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb {"projectId":"xian-4dfeb","projectNumber":"1033165932165","displayName":"xian","name":"projects/xian-4dfeb","resources":{"hostingSite":"xian-4dfeb"},"state":"ACTIVE","etag":"1_3ac2b6ad-8cfd-4576-8ce0-bdb1f4230d11"}
+[debug] [2023-07-06T02:35:03.858Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites pageToken=&pageSize=10
+[debug] [2023-07-06T02:35:05.245Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 200
+[debug] [2023-07-06T02:35:05.245Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites {"sites":[{"name":"projects/xian-4dfeb/sites/xian","defaultUrl":"https://xian.web.app","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","type":"USER_SITE"},{"name":"projects/xian-4dfeb/sites/xian-4dfeb","defaultUrl":"https://xian-4dfeb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-06T02:35:05.246Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 
+[debug] [2023-07-06T02:35:06.155Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 200
+[debug] [2023-07-06T02:35:06.155Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites {"sites":[{"name":"projects/xian-4dfeb/sites/xian","defaultUrl":"https://xian.web.app","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","type":"USER_SITE"},{"name":"projects/xian-4dfeb/sites/xian-4dfeb","defaultUrl":"https://xian-4dfeb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-06T02:35:06.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config [none]
+[debug] [2023-07-06T02:35:07.502Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config 200
+[debug] [2023-07-06T02:35:07.502Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config {"projectId":"xian-4dfeb","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","storageBucket":"xian-4dfeb.appspot.com","apiKey":"AIzaSyDGow1xtcXn659Zvcld2UjxpHRfLsdt9Ec","authDomain":"xian-4dfeb.firebaseapp.com","messagingSenderId":"1033165932165","measurementId":"G-R4G868Y08L"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-06T02:35:20.713Z] Error: Export encountered errors on following paths:
+	/page: /
+    at /Users/user/Documents/china/node_modules/next/dist/export/index.js:621:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (/Users/user/Documents/china/node_modules/next/dist/trace/trace.js:103:20)
+    at async /Users/user/Documents/china/node_modules/next/dist/build/index.js:1488:21
+    at async Span.traceAsyncFn (/Users/user/Documents/china/node_modules/next/dist/trace/trace.js:103:20)
+    at async /Users/user/Documents/china/node_modules/next/dist/build/index.js:1344:17
+    at async Span.traceAsyncFn (/Users/user/Documents/china/node_modules/next/dist/trace/trace.js:103:20)
+    at async build (/Users/user/Documents/china/node_modules/next/dist/build/index.js:145:29)
+    at async build (/Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:57:5)
+    at async prepareFrameworks (/Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:211:33)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-06T02:39:51.181Z] ----------------------------------------------------------------------
+[debug] [2023-07-06T02:39:51.186Z] Command:       /usr/local/bin/firebase /Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-06T02:39:51.187Z] CLI Version:   12.3.1
+[debug] [2023-07-06T02:39:51.187Z] Platform:      darwin
+[debug] [2023-07-06T02:39:51.187Z] Node Version:  v16.16.0
+[debug] [2023-07-06T02:39:51.237Z] Time:          Thu Jul 06 2023 03:39:51 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-06T02:39:51.238Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-06T02:39:51.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-06T02:39:51.321Z] > authorizing via signed-in user (jordangonzales3457@gmail.com)
+[debug] [2023-07-06T02:39:51.321Z] [iam] checking project xian-4dfeb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-06T02:39:51.333Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions [none]
+[debug] [2023-07-06T02:39:51.334Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions x-goog-quota-user=projects/xian-4dfeb
+[debug] [2023-07-06T02:39:51.334Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-06T02:39:52.493Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions 200
+[debug] [2023-07-06T02:39:52.493Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xian-4dfeb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-06T02:39:52.494Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb [none]
+[debug] [2023-07-06T02:39:53.453Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb 200
+[debug] [2023-07-06T02:39:53.453Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb {"projectId":"xian-4dfeb","projectNumber":"1033165932165","displayName":"xian","name":"projects/xian-4dfeb","resources":{"hostingSite":"xian-4dfeb"},"state":"ACTIVE","etag":"1_3ac2b6ad-8cfd-4576-8ce0-bdb1f4230d11"}
+[debug] [2023-07-06T02:39:56.432Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites pageToken=&pageSize=10
+[debug] [2023-07-06T02:39:57.358Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 200
+[debug] [2023-07-06T02:39:57.358Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites {"sites":[{"name":"projects/xian-4dfeb/sites/xian","defaultUrl":"https://xian.web.app","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","type":"USER_SITE"},{"name":"projects/xian-4dfeb/sites/xian-4dfeb","defaultUrl":"https://xian-4dfeb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-06T02:39:57.360Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 
+[debug] [2023-07-06T02:39:58.400Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites 200
+[debug] [2023-07-06T02:39:58.401Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/xian-4dfeb/sites {"sites":[{"name":"projects/xian-4dfeb/sites/xian","defaultUrl":"https://xian.web.app","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","type":"USER_SITE"},{"name":"projects/xian-4dfeb/sites/xian-4dfeb","defaultUrl":"https://xian-4dfeb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-06T02:39:58.401Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config [none]
+[debug] [2023-07-06T02:39:59.542Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config 200
+[debug] [2023-07-06T02:39:59.542Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xian-4dfeb/webApps/-/config {"projectId":"xian-4dfeb","appId":"1:1033165932165:web:720accf9d033ff45dfcbec","storageBucket":"xian-4dfeb.appspot.com","apiKey":"AIzaSyDGow1xtcXn659Zvcld2UjxpHRfLsdt9Ec","authDomain":"xian-4dfeb.firebaseapp.com","messagingSenderId":"1033165932165","measurementId":"G-R4G868Y08L"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info]  • non-static component /[userID]/oauth/session/login/page
+[info] 
+[debug] [2023-07-06T02:40:45.216Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:362:42)
+    at async deploy (/Users/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

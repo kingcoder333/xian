@@ -1,0 +1,86 @@
+.formContainerInput {
+    margin: auto 2rem;
+    background: #ffffff;
+    padding: 3rem 2rem;
+    width: 400px;
+}
+
+.formContainerInput input {
+    height: 4.5rem !important;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    color: #848482 !important;
+    border: 1px solid #e0e0e0 !important;
+    padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.formContainerInput input:focus, .formContainerInput input:focus-visible {
+    border: 1px solid #e23c39 !important;
+    box-shadow: none !important;
+}
+
+.formContainerInput input::placeholder {
+    color: #848482 !important;
+    text-transform: capitalize;
+}
+
+.formContainerInput .iconHolder {
+    position: absolute;
+    top: 33%;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.formContainerInput .authButton {
+    height: 4.5rem !important;
+    width: 100%;
+    background-color: #e23c39;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e23c39;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+
+.formContainerInput .authOptions a {
+    text-decoration: none !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: #e23c39;
+}
+
+.formContainerInput .emailAlternatives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.formContainerInput small {
+    font-size: 14px !important;
+    color: #ff7171 !important;
+}
+
+.formContainerInput .errorMsg {
+    display: block;
+border: 1px solid #ff7171;
+background: #fac7c7;
+margin-bottom: 16px;
+font-size: 14px;
+padding: 10px 8px;
+overflow: hidden;
+position: relative;
+z-index: 1001;
+border-radius: 4px;
+text-align: center;
+color: #494848 !important;
+}
